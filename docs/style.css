@@ -1,0 +1,151 @@
+﻿
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background: #004080;
+    color: white;
+    padding: 20px 0;
+    max-width: 100%;
+    position: relative; /* Ensures absolute positioning works */
+    text-align: center; /* Centers text */
+}
+
+.text-content {
+    display: inline-block;
+    width: 100%;
+    margin-left: 80px; 
+}
+
+.text-content h1,
+.text-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.header-content {
+    position: relative; /* Ensures elements inside can be positioned */
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: -85px; 
+    top: 50%;
+    transform: translateY(-50%); /* Center it vertically */
+    width: 80px;
+    height: auto;
+}
+    
+    header h1 {
+        margin: 0 auto;
+        font-size: 26px;
+        max-width: 90%;
+    }
+
+    header p {
+        margin: 5px auto 0;
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+aside {
+    width: 250px;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+    aside h2 {
+        font-size: 20px;
+        color: #333;
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        aside ul li {
+            margin: 10px 0;
+        }
+
+            aside ul li a {
+                text-decoration: none;
+                color: #004080;
+                font-weight: bold;
+            }
+
+                aside ul li a:hover {
+                    text-decoration: underline;
+                }
+
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+    section h2 {
+        font-size: 22px;
+        color: #333;
+    }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #004080;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tbody tr:hover {
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
