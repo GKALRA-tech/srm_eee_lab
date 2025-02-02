@@ -1,6 +1,6 @@
 ﻿
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -10,17 +10,46 @@ body {
 header {
     background: #004080;
     color: white;
-    text-align: center;
-    padding: 15px;
+    padding: 20px 0;
     max-width: 100%;
+    position: relative; /* Ensures absolute positioning works */
+    text-align: center; /* Centers text */
 }
 
+.text-content {
+    display: inline-block;
+    width: 100%;
+    margin-left: 80px; 
+}
+
+.text-content h1,
+.text-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.header-content {
+    position: relative; /* Ensures elements inside can be positioned */
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: -85px; 
+    top: 50%;
+    transform: translateY(-50%); /* Center it vertically */
+    width: 80px;
+    height: auto;
+}
+    
     header h1 {
         margin: 0 auto;
         font-size: 26px;
         max-width: 90%;
     }
-        
+
     header p {
         margin: 5px auto 0;
         font-size: 18px;
@@ -37,7 +66,6 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
 
 aside {
     width: 250px;
