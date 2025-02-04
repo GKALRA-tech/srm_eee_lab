@@ -12,8 +12,8 @@ header {
     color: white;
     padding: 20px 0;
     max-width: 100%;
-    position: relative; /* Ensures absolute positioning works */
-    text-align: center; /* Centers text */
+    position: relative; 
+    text-align: center; 
 }
 
 .text-content {
@@ -29,7 +29,7 @@ header {
 }
 
 .header-content {
-    position: relative; /* Ensures elements inside can be positioned */
+    position: relative; 
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
@@ -39,7 +39,7 @@ header {
     position: absolute;
     left: -85px; 
     top: 50%;
-    transform: translateY(-50%); /* Center it vertically */
+    transform: translateY(-50%); 
     width: 80px;
     height: auto;
 }
