@@ -2,11 +2,11 @@
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f4f4f4;
 }
 
 .header {
-    background-color: #003366;
+    background-color: #004080;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
