@@ -6,11 +6,69 @@
 }
 
 header {
-    background-color: #004080;
+    background: #004080;
     color: white;
-    padding: 1rem;
+    padding: 40px 0;
+    max-width: 100%;
+    position: relative;
     text-align: center;
 }
+
+.text-content {
+    display: inline-block;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.text-content h1{
+    margin: 0;
+    padding: 5px 0;
+}
+
+.header-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 26px;
+    max-width: 90%;
+}
+
+.apparatus-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .apparatus-table th, .apparatus-table td {
+        padding: 0.8rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border: 5px solid #ccc;
+    }
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #004080;
+    color: white;
+}
+
 
 .container {
     padding: 2rem;

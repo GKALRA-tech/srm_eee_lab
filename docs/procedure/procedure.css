@@ -57,9 +57,13 @@ header p {
 
 
 .container {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .experiments-table {
@@ -71,7 +75,18 @@ header p {
         padding: 0.8rem;
         text-align: left;
         border-bottom: 1px solid #ddd;
+        border: 1px solid #ccc;
     }
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #004080;
+    color: white;
+}
 
     .experiments-table a {
         color: #004080;
