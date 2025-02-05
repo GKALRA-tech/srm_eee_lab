@@ -5,7 +5,7 @@
     background-color: #f4f4f4;
 }
 
-/* HEADER STYLES */
+
 header {
     background: #004080;
     color: white;
@@ -15,49 +15,46 @@ header {
     text-align: center;
 }
 
-/* FLEXBOX CONTAINER FOR HEADER */
-.header-content {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center; /* Align logo and text */
-    justify-content: center; /* Center text horizontally */
-    padding-left: 100px; /* Prevent overlap with logo */
-}
-
-/* LOGO STYLE - FIXING SIZE & POSITION */
-.logo {
-    position: absolute;
-    left: 10px; /* Keep it at the left */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80px; /* Ensuring proper logo size */
-    height: auto;
-}
-
-/* TEXT CONTENT STYLING */
 .text-content {
-    text-align: center;
-    flex-grow: 1;
+    display: inline-block;
+    width: 100%;
+    margin-left: 80px;
 }
 
     .text-content h1,
     .text-content p {
         margin: 0;
         padding: 5px 0;
-        color: white;
     }
 
+.header-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+}
+
 header h1 {
+    margin: 0 auto;
     font-size: 26px;
     max-width: 90%;
 }
 
 header p {
+    margin: 5px auto 0;
     font-size: 18px;
     max-width: 90%;
 }
+
 
 .container {
     padding: 2rem;
