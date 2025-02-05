@@ -1,0 +1,86 @@
+﻿body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* HEADER STYLES */
+header {
+    background: #004080;
+    color: white;
+    padding: 20px 0;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* FLEXBOX CONTAINER FOR HEADER */
+.header-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Align logo and text */
+    justify-content: center; /* Center text horizontally */
+    padding-left: 100px; /* Prevent overlap with logo */
+}
+
+/* LOGO STYLE - FIXING SIZE & POSITION */
+.logo {
+    position: absolute;
+    left: 10px; /* Keep it at the left */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px; /* Ensuring proper logo size */
+    height: auto;
+}
+
+/* TEXT CONTENT STYLING */
+.text-content {
+    text-align: center;
+    flex-grow: 1;
+}
+
+    .text-content h1,
+    .text-content p {
+        margin: 0;
+        padding: 5px 0;
+        color: white;
+    }
+
+header h1 {
+    font-size: 26px;
+    max-width: 90%;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 90%;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experiments-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .experiments-table th, .experiments-table td {
+        padding: 0.8rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .experiments-table a {
+        color: #004080;
+        text-decoration: none;
+    }
+
+        .experiments-table a:hover {
+            text-decoration: underline;
+        }
